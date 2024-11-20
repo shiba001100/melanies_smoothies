@@ -44,7 +44,7 @@ if ingredients_list:
             smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + search_on)
             df = smoothiefroot_response.json()
             df_nutrition = df["nutrition"]
-            st.dataframe(data=df_nutrition, use_container_width=True)
+            st_df = st.dataframe(data=df_nutrition, use_container_width=True)
             
     #st.write(ingredients_string)
 
