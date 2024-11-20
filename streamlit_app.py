@@ -45,7 +45,6 @@ if ingredients_list:
             df = smoothiefroot_response.json()
             df_nutrition = df["nutrition"]
             st.dataframe(data=df_nutrition, use_container_width=True)
-            st_df = st.dataframe(data=smoothiefroot_response.json(),use_container_width=True)
             
     #st.write(ingredients_string)
 
